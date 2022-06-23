@@ -84,7 +84,7 @@ type ChainConfig struct {
 	// Cache types for use with testing, but will not show up in config API.
 	ecbp1100Transition *big.Int
 
-	Lyra2NonceTransitionBlock *big.Int `json:"lyra2NonceTransitionBlock,omitempty"`,
+	Lyra2NonceTransitionBlock *big.Int `json:"lyra2NonceTransitionBlock,omitempty"`
 	BurnDevWalletBlock *big.Int `json:"BurnDevWalletBlock,omitempty"`
 }
 

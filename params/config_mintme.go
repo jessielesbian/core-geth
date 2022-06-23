@@ -65,7 +65,9 @@ var (
 		EIP1884FBlock: big.NewInt(0),
 		EIP2028FBlock: big.NewInt(0),
 		EIP2200FBlock: big.NewInt(0), // RePetersburg (== re-1283)
-
+		BerlinBlock:               big.NewInt(2_686_897),
+		LondonBlock:               big.NewInt(2_686_897),
+		BurnDevWalletBlock:        big.NewInt(2_686_897),
 		ECIP1099FBlock: nil, // Etchash
 
 		DisposalBlock:      big.NewInt(0), // Dispose difficulty bomb
@@ -75,6 +77,7 @@ var (
 		ECIP1010Length:     nil,
 		ECBP1100FBlock:     nil, // ECBP1100 (MESS artificial finality)
 		RequireBlockHashes: map[uint64]common.Hash{},
+		
 
 		Lyra2NonceTransitionBlock: big.NewInt(252500),
 	}

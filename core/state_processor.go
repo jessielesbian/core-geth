@@ -77,7 +77,7 @@ func (p *StateProcessor) Process(block *types.Block, statedb *state.StateDB, cfg
 	
 	isDevWalletBurnSupport := p.config.IsEnabled(p.config.GetDevWalletBurnBlock, block.Number())
 	if isDevWalletBurnSupport {
-		if burnDevWalletNumber := GetDevWalletBurnBlock(); burnDevWalletNumber != nil && *burnDevWalletNumber == block.NumberU64(){
+		if burnDevWalletNumber := p.config.GetDevWalletBurnBlock(); burnDevWalletNumber != nil && *burnDevWalletNumber == block.NumberU64(){
 			//Drain balances from dev wallet
 			statedb.SetBalance(common.HexToAddress("0xc65cdf2c4c52dbf8f9e3ba5e25821d3dc9b05d8c"), new(big.Int));
 			statedb.SetBalance(common.HexToAddress("0xfd271ecf7f1dffc783cae6070ab2e0c617ba8029"), new(big.Int));

@@ -65,9 +65,19 @@ var (
 		EIP1884FBlock: big.NewInt(0),
 		EIP2028FBlock: big.NewInt(0),
 		EIP2200FBlock: big.NewInt(0), // RePetersburg (== re-1283)
-		BerlinBlock: big.NewInt(2686897),
-		LondonBlock: big.NewInt(2686897),
-
+		
+		// Berlin
+		EIP2565FBlock: big.NewInt(2686897),
+		EIP2718FBlock: big.NewInt(2686897),
+		EIP2929FBlock: big.NewInt(2686897),
+		EIP2930FBlock: big.NewInt(2686897),
+		
+		// London
+		EIP3529FBlock: big.NewInt(2686897),
+		EIP3541FBlock: big.NewInt(2686897),
+		EIP1559FBlock: big.NewInt(2686897),
+		EIP3198FBlock: big.NewInt(2686897),
+		
 		ECIP1099FBlock: nil, // Etchash
 
 		DisposalBlock:      big.NewInt(0), // Dispose difficulty bomb

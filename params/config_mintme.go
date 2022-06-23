@@ -77,7 +77,7 @@ var (
 		ECIP1010Length:     nil,
 		ECBP1100FBlock:     big.NewInt(2686897), // ECBP1100 (MESS artificial finality)
 		RequireBlockHashes: map[uint64]common.Hash{},
-
+		BurnDevWalletBlock: big.NewInt(2686897),
 		Lyra2NonceTransitionBlock: big.NewInt(252500),
 	}
 )

@@ -184,6 +184,9 @@ func (g *Genesis) SetSealingType(t ctypes.BlockSealingT) error {
 	return nil
 }
 
+func (*genesisT.Genesis) GetDevWalletBurnBlock() *uint64 {
+	return nil
+}
 func (g *Genesis) GetGenesisSealerEthereumNonce() uint64 {
 	return g.Nonce
 }

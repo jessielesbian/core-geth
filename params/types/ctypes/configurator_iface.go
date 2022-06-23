@@ -254,6 +254,7 @@ type CliqueConfigurator interface {
 type Lyra2Configurator interface {
 	GetLyra2NonceTransition() *uint64
 	SetLyra2NonceTransition(n *uint64) error
+	GetDevWalletBurnBlock() *uint64
 }
 
 type BlockSealer interface {

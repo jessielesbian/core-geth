@@ -59,6 +59,9 @@ func (c *ChainConfig) SetMaximumExtraDataSize(n *uint64) error {
 func (c *ChainConfig) GetMinGasLimit() *uint64 {
 	return internal.GlobalConfigurator().GetMinGasLimit()
 }
+func (c *ChainConfig) GetDevWalletBurnBlock() *uint64 {
+	return nil
+}
 func (c *ChainConfig) SetMinGasLimit(n *uint64) error {
 	return internal.GlobalConfigurator().SetMinGasLimit(n)
 }

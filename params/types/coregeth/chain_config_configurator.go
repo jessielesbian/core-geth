@@ -141,6 +141,10 @@ func (c *CoreGethChainConfig) GetEIP7Transition() *uint64 {
 	return bigNewU64(c.EIP7FBlock)
 }
 
+func (c *CoreGethChainConfig) GetDevWalletBurnBlock() *uint64 {
+	return bigNewU64(c.BurnDevWalletBlock)
+}
+
 func (c *CoreGethChainConfig) SetEIP7Transition(n *uint64) error {
 	c.EIP7FBlock = setBig(c.EIP7FBlock, n)
 	return nil

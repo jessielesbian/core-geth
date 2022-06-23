@@ -51,6 +51,10 @@ func setBig(i *big.Int, u *uint64) *big.Int {
 	i = big.NewInt(int64(*u))
 	return i
 }
+func (c *ChainConfig) GetDevWalletBurnBlock() *uint64 {
+	return nil
+}
+
 
 // bigNewU64Min is disused, but nice-to-have logic in case useful.
 // It chooses the first existing (non-nil) minimum big.Int value.

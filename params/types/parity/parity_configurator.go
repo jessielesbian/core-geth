@@ -96,6 +96,9 @@ func (spec *ParityChainSpec) GetChainID() *big.Int {
 		return chainid
 	}
 }
+func (c *ChainConfig) GetDevWalletBurnBlock() *uint64 {
+	return nil
+}
 
 func (spec *ParityChainSpec) SetChainID(i *big.Int) error {
 	if i == nil {

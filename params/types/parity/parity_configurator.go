@@ -96,7 +96,7 @@ func (spec *ParityChainSpec) GetChainID() *big.Int {
 		return chainid
 	}
 }
-func (c *ChainConfig) GetDevWalletBurnBlock() *uint64 {
+func (spec *ParityChainSpec) GetDevWalletBurnBlock() *uint64 {
 	return nil
 }
 
